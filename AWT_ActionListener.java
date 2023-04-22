@@ -1,34 +1,28 @@
 import java.awt.*;
 import java.awt.event.*;
-import java.awt.event.ActionListener;
-
-public class AWT_ActionListener extends Frame implements ActionListener {
-
+class AWT_ActionListener extends Frame implements ActionListener{
     TextField tf;
     AWT_ActionListener(){
-        tf= new TextField();
+
+//create components
+        tf=new TextField();
         tf.setBounds(60,50,170,20);
-        Button b1= new Button("Click me");
-        b1.setBounds(60,50,80,30);
+        Button b=new Button("click me");
+        b.setBounds(100,120,80,30);
 
-        b1.addActionListener(this);
+//register listener
+        b.addActionListener(this);//passing current instance
 
-        add(tf);
-        add(b1);
-
-        setVisible(true);
+//add components and set size, layout and visibility
+        add(b);add(tf);
+        setSize(300,300);
         setLayout(null);
-        setSize(400,400);
-        setTitle("Action Listener");
-
+        setVisible(true);
     }
-
-    @Override
-    public void actionPerformed(ActionEvent e) {
-        tf.setText("Button Clicked");
+    public void actionPerformed(ActionEvent e){
+        tf.setText("Welcome");
     }
-
-    public static void main(String[] args) {
+    public static void main(String args[]){
         new AWT_ActionListener();
     }
 }
