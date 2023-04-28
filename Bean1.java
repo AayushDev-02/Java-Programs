@@ -7,7 +7,7 @@ public class Bean1 {
         JFrame frame = new JFrame();
         frame.setSize(500,500);
         frame.setDefaultCloseOperation(JFrame.EXIT_ON_CLOSE);
-        CustomComponent customComponent = new CustomComponent();
+        com.company.CustomComponent customComponent = new com.company.CustomComponent();
         customComponent.setX(100);
         customComponent.setY(100);
         customComponent.setWidth(200);

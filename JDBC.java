@@ -11,7 +11,7 @@ public class JDBC {
         try{
             Class.forName("com.mysql.cj.jdbc.Driver");          // step 0 - load drivers
 
-            String conn_string = "jdbc:mysql://localhost/test?" + "user=root&password=pagein30";
+            String conn_string = "jdbc:mysql://localhost/db1?" + "user=root&password=pagein30";
 
             conn = DriverManager.getConnection(conn_string);
 
