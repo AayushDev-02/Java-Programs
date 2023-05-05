@@ -16,7 +16,7 @@ public class MySql {
             ResultSet rs = stm.executeQuery("Select * from table1");
 
             while(rs.next()){
-                System.out.println(rs.getString(1) + " " + rs.getString(2));
+                System.out.println(rs.getString(1) + " " + rs.getString(2) + " " + rs.getString(3) + " " + rs.getString(4) + " " + rs.getString(5) + " " + rs.getString(6) );
             }
 
             con.close();

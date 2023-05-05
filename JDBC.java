@@ -18,7 +18,7 @@ public class JDBC {
             stmt = conn.createStatement();
             rs = stmt.executeQuery("SELECT * FROM Student");
 
-
+ 
         }catch (SQLException e){
             System.out.println("SQLException " + e.getMessage());
             System.out.println("SQLState" + e.getSQLState());
